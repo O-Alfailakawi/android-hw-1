@@ -1,45 +1,32 @@
 public class HelloWorld{
 
      public static void main(String []args){
-         
-         
-        System.out.println(grade(98.4));
-        System.out.println(grade(82.0));
-        System.out.println(grade(73.6));
-        System.out.println(grade(62.7));
-        System.out.println(grade(58.3));
-        
-        
-        
-        
+       
+      grade(98.4);
+      grade(85.2);
+      grade(70.3);
+      grade(63.2);
+      grade(58.4);
+      
      }
      
-     public static char grade (double x){
-         
-         char A = 'A';
-         char B = 'B';
-         char C = 'C';
-         char D = 'D';
-         char F = 'F';
-         
-         if(x > 90){
-             return A;
-         }
-        else if (x > 80)
-        {
-            return B;
-        }
-         else if (x > 70)
-        {
-            return C;
-        }
-        else if (x > 60)
-        {
-            return D;
-        }
-        else
-        {
-            return F;
-        }
+     public static void grade (double a){
+         if (a > 90){
+            System.out.println("A");
+        } else if (a > 80 ){
+             System.out.println("B");
+        }  else if (a > 70 ){
+             System.out.println("C");
+     }  else if (a > 60 ){
+             System.out.println("D");
+     } else {
+             System.out.println("F");
+             
+            
      }
+     
+     }
+     
+     
+     
 }
